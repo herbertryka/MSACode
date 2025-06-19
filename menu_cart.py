@@ -28,7 +28,23 @@ def display_cart(cart:dict, menu_items:dict)->None:
     for item, quantity in cart.items():
         total = total + (quantity * menu_items[item])
         print(f"{quantity} {item} @{menu_items[item]:.2f}: {quantity * menu_items[item]:.2f}")
-    print(f"\nTotal: {total}")
+    print(f"\nTotal: {total:.2f}")
+
+"""
+Function to write itmes from cart to a receipt
+Input: (dict)Cart
+Output: None
+"""
+def print_reciept(cart:dict, menu_items:dict)->None:
+    with open("receipt.txt", "a") as receipt_file:
+        total = 0
+        #loop through the cart to print the output
+        for item, quantity in cart.items():
+            total = total + (quantity * menu_items[item])
+            receipt_file.write(f"{quantity} {item} @{menu_items[item]:.2f}: {quantity * menu_items[item]:.2f}\n")
+        receipt_file.write(f"\nTotal: {total:.2f}\n")
+
+
 
 def main():
     total = 0
@@ -41,9 +57,11 @@ def main():
 
         #determine if we need to end the program
         if item_requested.lower() == "end":
+            #print the reciept with items from the cart
+            print_reciept(item_cart, menu_items)
             break
 
-        if item_requested not in menu_items():
+        if item_requested not in menu_items:
             print(f"ERROR: {item_requested} is not on the menu")
             continue
 
