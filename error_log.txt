@@ -1,0 +1,10 @@
+2025-06-24 11:25:58.898360: Error on line 2: Incorrect data format
+2025-06-24 11:25:58.898360: Error on line 3: Incorrect data format
+2025-06-24 11:26:51.187148: Error on line 2: Incorrect data format
+2025-06-24 11:26:51.187148: Error on line 3: Incorrect data format
+2025-06-24 11:27:25.884352: Error on line 2: Incorrect data format
+2025-06-24 11:27:25.884352: Error on line 3: Incorrect data format
+2025-06-24 11:27:51.079627: Error on line 2: Incorrect data format
+2025-06-24 11:27:51.080704: Error on line 3: Incorrect data format
+2025-06-24 11:28:22.965262: Error on line 2: Incorrect data format
+2025-06-24 11:28:22.965262: Error on line 3: Incorrect data format

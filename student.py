@@ -22,7 +22,7 @@ class Student():
         
         return class_level
     
-    def get_student_id(self):
+    def get_id(self):
         return self.__student_id
     def get_first_name(self):
         return self.__first_name
@@ -40,6 +40,8 @@ class Student():
         return self.__credit_hours
     def set_credit_hours(self, new_credit_hours):
         self.__credit_hours = new_credit_hours
+    def update_credit_hours(self, new_credit_hours):
+        self.__credit_hours += new_credit_hours
     def get_gpa(self):
         return self.__gpa
     def set_gpa(self, new_gpa):
